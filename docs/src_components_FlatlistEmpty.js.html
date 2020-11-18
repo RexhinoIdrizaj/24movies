@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> src/components/FlatlistEmpty.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">24movies project</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Components</h2><h3>Global</h3><ul><li><a href="global.html#FlatlistEmpty">FlatlistEmpty</a></li><li><a href="global.html#MovieCard">MovieCard</a></li><li><a href="global.html#MyCard">MyCard</a></li><li><a href="global.html#MyHeader">MyHeader</a></li><li><a href="global.html#MyIcon">MyIcon</a></li><li><a href="global.html#MyImage">MyImage</a></li><li><a href="global.html#MyText">MyText</a></li><li><a href="global.html#MyTextInput">MyTextInput</a></li><li><a href="global.html#PlayButton">PlayButton</a></li><li><a href="global.html#Section">Section</a></li><li><a href="global.html#SectionHeader">SectionHeader</a></li><li><a href="global.html#WithFocus">WithFocus</a></li></ul></div><div class="category"><h2>Config</h2><h3>Global</h3><ul><li><a href="global.html#IMAGE_URL">IMAGE_URL</a></li><li><a href="global.html#initializeAxios">initializeAxios</a></li><li><a href="global.html#MAIN_URL">MAIN_URL</a></li><li><a href="global.html#TMDB_API_KEY">TMDB_API_KEY</a></li></ul></div><div class="category"><h2>CustomHooks</h2><h3>Global</h3><ul><li><a href="global.html#useTVEventHandler">useTVEventHandler</a></li></ul></div><div class="category"><h2>MainScreens</h2><h3>Global</h3><ul><li><a href="global.html#DashboardView">DashboardView</a></li><li><a href="global.html#DetailView">DetailView</a></li><li><a href="global.html#PlayerView">PlayerView</a></li><li><a href="global.html#SearchView">SearchView</a></li><li><a href="global.html#Splashscreen">Splashscreen</a></li></ul></div><div class="category"><h2>Redux</h2><h3>Global</h3><ul><li><a href="global.html#moviesReducer">moviesReducer</a></li></ul></div><div class="category"><h2>UIConstants</h2><h3>Global</h3><ul><li><a href="global.html#colors">colors</a></li><li><a href="global.html#generalStyles">generalStyles</a></li></ul></div><div class="category"><h2>Utils</h2><h3>Global</h3><ul><li><a href="global.html#filterWantedMovies">filterWantedMovies</a></li><li><a href="global.html#getGenreIds">getGenreIds</a></li><li><a href="global.html#getGenreName">getGenreName</a></li><li><a href="global.html#navigate">navigate</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>src/components/FlatlistEmpty.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from 'react';
+import {ActivityIndicator, View} from 'react-native';
+import {colors} from '../constants/UI';
+
+/**
+ * @category
+ * Components
+ * @description
+ * Component used when flatlist has no data
+ */
+const FlatlistEmpty = () => {
+  return (
+    &lt;View
+      style={{
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex: 1,
+        height: 100,
+      }}>
+      &lt;ActivityIndicator color={colors.primary} />
+    &lt;/View>
+  );
+};
+
+export default FlatlistEmpty;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+</body>
+</html>

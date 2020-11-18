@@ -1,0 +1,23 @@
+{
+  "tags": {
+    "allowUnknownTags": ["category"]
+  },
+  "plugins": ["node_modules/better-docs/category"],
+  "source": {
+    "include": ["./src", "./index.js"]
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true,
+    "template": "./node_modules/better-docs"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "better-docs": {
+      "name": "24movies project"
+    }
+  }
+}
